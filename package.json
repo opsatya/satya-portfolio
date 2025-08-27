@@ -1,11 +1,11 @@
 {
-  "name": "dennis-snellenberg-portfolio",
-  "title": "Dennis Snellenberg • Freelance Designer & Developer",
-  "description": "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis",
+  "name": "satyajeet-singh-portfolio",
+  "title": "Satyajeet Singh • Full Stack Developer & Programmer",
+  "description": "Full Stack Developer skilled in the MERN stack, building scalable web applications, REST APIs, and secure authentication. Passionate about clean, maintainable code and data science.",
   "author": {
-    "name": "Ali Bagheri",
-    "email": "alibagheri2079.dev@gmail.com",
-    "url": "https://www.github.com/alibagheri2079"
+    "name": "Satyajeet Singh",
+    "email": "satyajeetsingh89001@gmail.com",
+    "url": "https://github.com/opsatya"
   },
   "keywords": [
     "Design",
@@ -29,7 +29,6 @@
     "gsap": "^3.12.4",
     "lucide-react": "^0.298.0",
     "next": "14.0.4",
-    "next-cloudinary": "^5.13.0",
     "react": "^18",
     "react-dom": "^18",
     "react-wrap-balancer": "^1.1.0",
@@ -46,7 +45,9 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "husky": "^8.0.0",
+    "less": "^4.4.1",
     "lint-staged": "^15.2.0",
+    "next-with-less": "^3.0.1",
     "postcss": "^8",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^9.3.0",

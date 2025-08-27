@@ -8,8 +8,9 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 
 import { Title, Wrapper } from './index.styled';
 
+// Updated short summary to reflect Satyajeet's profile and job-seeking focus
 const phrase =
-  'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
+  'Full Stack Developer (MERN). I build scalable web apps, REST APIs, and secure auth with a focus on performance and clean, maintainable code.';
 
 export function Description() {
   return (
@@ -24,8 +25,7 @@ export function Description() {
         <div className='basis-7/12 lg:basis-3/12'>
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              The combination of my passion for design, code & interaction
-              positions me in a unique place in the web design world.
+              Comfortable with cloud deployments, Docker, and Git workflows. Quick to learn, focused on solving real problems, and ready to contribute.
             </Balancer>
           </ParallaxFade>
         </div>
@@ -38,11 +38,19 @@ export function Description() {
           }}
         >
           <div className='absolute right-0 top-3/4 lg:top-full lg:me-10'>
-            <Link href='/about' passHref>
-              <MagneticButton variant='ghost' size='xl'>
-                About me
-              </MagneticButton>
-            </Link>
+            {/* Clear CTAs to projects and contact for recruiters */}
+            <div className='flex gap-3'>
+              <Link href='/work' passHref>
+                <MagneticButton variant='ghost' size='xl'>
+                  View projects
+                </MagneticButton>
+              </Link>
+              <Link href='/contact' passHref>
+                <MagneticButton variant='ghost' size='xl'>
+                  Contact
+                </MagneticButton>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </Wrapper>

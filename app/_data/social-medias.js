@@ -1,18 +1,15 @@
 export const socialMedias = [
   {
-    href: 'https://www.awwwards.com/dennissnellenberg/',
-    title: 'Awwwards',
+    href: 'mailto:satyajeet.singh12005@gmail.com',
+    title: 'Gmail',
   },
   {
-    href: 'https://www.instagram.com/codebydennis/',
-    title: 'Instagram',
+    href: 'https://github.com/opsatya/',
+    title: 'Github',
   },
   {
-    href: 'https://dribbble.com/dennissnellenberg',
-    title: 'Dribbble',
-  },
-  {
-    href: 'https://www.linkedin.com/in/dennissnellenberg/',
+    // Corrected LinkedIn URL as provided
+    href: 'https://www.linkedin.com/in/satyjeet-singh',
     title: 'LinkedIn',
   },
 ];

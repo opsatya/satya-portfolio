@@ -72,13 +72,13 @@ export function useFollowPointer({ modal, cursor, label }) {
         ease: 'power3',
       });
 
-      // Move cursor label
+      // Move cursor label (match circle timing to stay centered)
       xMoveLabel.current = gsap.quickTo(label.current, 'left', {
-        duration: 0.45,
+        duration: 0.5,
         ease: 'power3',
       });
       yMoveLabel.current = gsap.quickTo(label.current, 'top', {
-        duration: 0.45,
+        duration: 0.5,
         ease: 'power3',
       });
     });

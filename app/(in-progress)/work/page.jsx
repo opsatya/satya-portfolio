@@ -1,5 +1,5 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import Link from 'next/link';
+import { Transition, Navbar, Thumbnail, Project } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -11,7 +11,11 @@ export const metadata = {
 export default function Work() {
   return (
     <Transition>
-      <InProgress>Work Page</InProgress>
+      <Navbar />
+      <main>
+        <Thumbnail />
+        <Project />
+      </main>
     </Transition>
   );
 }

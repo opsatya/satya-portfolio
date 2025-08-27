@@ -27,7 +27,7 @@ export function Project() {
   });
 
   return (
-    <section ref={containerRef} className='relative z-10 mt-14'>
+    <section id='projects' ref={containerRef} className='relative z-10 mt-14'>
       <div className='grid items-center'>
         <div className='bg-background'>
           <motion.div
@@ -51,6 +51,7 @@ export function Project() {
           </motion.div>
         </div>
 
+        {/* Reduced height morph for subtle effect; mobile minimized via CSS media query */}
         <motion.div
           className='w-screen bg-background'
           style={{

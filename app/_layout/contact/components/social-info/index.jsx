@@ -23,18 +23,27 @@ export function SocialInfo() {
     );
   });
 
+  // Dynamic Indian Standard Time (IST)
+  const now = new Date();
+  const ist = new Intl.DateTimeFormat('en-IN', {
+    timeZone: 'Asia/Kolkata',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+  }).format(now);
+
   return (
     <div className='px-12 pb-4 pt-10'>
       <div className='flex flex-wrap items-stretch justify-between gap-5'>
         <div className='flex gap-8'>
           <div>
             <ListTitle>Version</ListTitle>
-            <p className='mt-7'>2022 © Edition</p>
+            <p className='mt-7'>2025 © Edition</p>
           </div>
           <div>
             <ListTitle>Local time</ListTitle>
             <p className='mt-7'>
-              <time>04:01 PM GMT+2</time>
+              <time>{ist} IST</time>
             </p>
           </div>
         </div>

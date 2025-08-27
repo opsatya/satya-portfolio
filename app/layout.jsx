@@ -3,6 +3,8 @@ import { neue_montreal } from '@/fonts';
 import { Offcanvas } from '@/layout';
 import { Providers } from '@/providers';
 import './globals.css';
+// Added Less stylesheet for scoped variables and reduced-motion utilities
+import './globals.less';
 
 /** @type {import('next').Metadata} */
 export const metadata = rootMetadata;

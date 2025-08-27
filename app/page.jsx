@@ -9,10 +9,11 @@ import {
 } from '@/layout';
 
 /** @type {import('next').Metadata} */
+// Updated page metadata to reflect Satyajeet Singh and full‑stack focus
 export const metadata = {
-  title: 'Home | Dennis Snellenberg',
+  title: 'Home | Satyajeet Singh',
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+    'Full Stack developer (MERN). Building scalable web apps, REST APIs, and secure auth. Cloud, Docker, and performance-focused UI.',
 };
 
 export default function Home() {

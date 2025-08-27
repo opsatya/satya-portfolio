@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDownLeft } from 'lucide-react';
 import Link from 'next/link';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 import { MagneticButton } from '@/components';
 
@@ -19,11 +19,13 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex items-center gap-8'>
           <ImageWrapper>
-            <CldImage
-              src='Dennis-Portfolio/images/mqtwxh5znybowgaljrbp'
+            <Image
+              src='/images/satya.jpeg'
               className='rounded-full object-cover'
               fill={true}
-              alt='Dennis Snellenberg Profile Picture'
+              alt='Profile Picture'
+              sizes='128px'
+              priority={true}
             />
           </ImageWrapper>
           <MainTitle>Let’s work</MainTitle>
@@ -54,24 +56,24 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex w-full flex-col gap-4 lg:flex-row'>
           <div>
-            <a href='mailto:info@dennissnellenberg.com'>
+            <a href='mailto:satyajeetsingh89001@gmail.com'>
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-full border-muted-foreground'
+                className='w-full min-w-[320px] whitespace-nowrap border-muted-foreground justify-start text-left'
               >
-                info@dennissnellenberg.com
+                satyajeetsingh89001@gmail.com
               </MagneticButton>
             </a>
           </div>
           <div>
-            <a href='tel:+31627847430'>
+            <a href='tel:+91-7709003064'>
               <MagneticButton
                 variant='outline'
                 size='md'
-                className='w-full border-muted-foreground'
+                className='w-full border-muted-foreground justify-start text-left'
               >
-                +31 6 27 84 74 30
+                +91 7709003064
               </MagneticButton>
             </a>
           </div>

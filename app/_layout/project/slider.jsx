@@ -1,6 +1,7 @@
 'use client';
 
-import { CldImage, CldVideoPlayer } from 'next-cloudinary';
+import Image from 'next/image';
+import { useState } from 'react';
 
 import { Center } from '@/components';
 
@@ -10,28 +11,24 @@ import { Center } from '@/components';
  * @param {string} props.source
  */
 export function ProjectSlider({ type, source }) {
+  const [imageError, setImageError] = useState(false);
   const image =
     type === 'image' ? (
-      <CldImage
-        src={source}
-        className='object-cover'
-        fill={true}
-        alt='project items'
-      />
+      !imageError ? (
+        <Image
+          src={source}
+          className='object-cover'
+          fill={true}
+          alt='project image'
+          onError={() => setImageError(true)}
+        />
+      ) : (
+        <div className='flex h-full w-full items-center justify-center bg-muted text-muted-foreground'>
+          Image unavailable
+        </div>
+      )
     ) : null;
-  const video =
-    type === 'video' ? (
-      <CldVideoPlayer
-        src={source}
-        loop={true}
-        controls={false}
-        muted={true}
-        autoPlay='always'
-        width='100%'
-        height='100%'
-        className='!static !bg-transparent'
-      />
-    ) : null;
+  const video = null; // Local video handling can be added later if needed
 
   return (
     <Center

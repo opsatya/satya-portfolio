@@ -14,10 +14,10 @@ export function NavbarBrand() {
           Code by
         </h5>
         <h5 className='ps-1 transition-transform duration-500 ease-in-expo group-hover:-translate-x-14'>
-          Dennis
+          Satya
         </h5>
         <h5 className='absolute left-28 ps-1 transition-transform duration-500 ease-in-expo group-hover:-translate-x-14'>
-          Snellenberg
+          Singh
         </h5>
       </div>
     </div>

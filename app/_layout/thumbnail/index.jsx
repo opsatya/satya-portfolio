@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 import { useFollowPointer } from '@/hooks';
 
@@ -21,6 +21,8 @@ export function Thumbnail() {
   const cursor = useRef(null);
   /** @type {import('react').MutableRefObject<HTMLElement>} */
   const label = useRef(null);
+  /** @type {import('react').MutableRefObject<HTMLElement>} */
+  const sectionRef = useRef(null);
 
   const {
     item: { active, index },
@@ -33,9 +35,30 @@ export function Thumbnail() {
     label,
   });
 
+  // Hide modal/cursor when the section is out of view
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(
+      entries => {
+        const isIntersecting = entries[0]?.isIntersecting ?? false;
+        if (!isIntersecting) {
+          // simulate leave so UI hides when scrolled away
+          handlePointerLeave(index);
+        }
+      },
+      { root: null, threshold: 0.1 },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, handlePointerLeave]);
+
   return (
     <section
+      ref={sectionRef}
       className='container relative'
+      onPointerLeave={() => handlePointerLeave(index)}
       onPointerMove={({ clientX, clientY }) => moveItems(clientX, clientY)}
     >
       <div className='my-8 flex flex-col gap-10'>

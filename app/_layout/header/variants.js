@@ -1,10 +1,12 @@
 /** @type {import('framer-motion').Variants} */
 export const slideUp = {
   initial: {
-    y: 300,
+    // Reduce initial offset for a gentler entrance
+    y: 60,
   },
   enter: {
     y: 0,
-    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 2.5 },
+    // Shorter duration, subtle easing, and minimal delay for better perceived performance
+    transition: { duration: 0.28, ease: [0.2, 0.8, 0.2, 1], delay: 0.1 },
   },
 };

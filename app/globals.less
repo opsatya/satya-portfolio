@@ -1,0 +1,43 @@
+// Lightweight Less variables and motion utilities
+@transitionFast: 120ms;
+@transitionBase: 200ms;
+
+// Subtle fade-in and slide-up helpers
+.fade-in {
+	opacity: 0;
+	animation: fadeIn @transitionBase ease-out forwards;
+}
+
+.slide-up {
+	transform: translateY(12px);
+	opacity: 0;
+	animation: slideUp @transitionBase ease-out forwards;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes slideUp {
+	from { transform: translateY(12px); opacity: 0; }
+	to { transform: translateY(0); opacity: 1; }
+}
+
+// Respect user reduced motion preference
+@media (prefers-reduced-motion: reduce) {
+	.fade-in, .slide-up {
+		animation: none !important;
+		opacity: 1 !important;
+		transform: none !important;
+	}
+  // Minimize heavy effects on small screens for performance
+  @media (max-width: 768px) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+

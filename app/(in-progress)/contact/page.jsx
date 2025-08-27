@@ -1,5 +1,4 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import { Navbar, Transition, Contact as ContactSection } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -11,7 +10,10 @@ export const metadata = {
 export default function Contact() {
   return (
     <Transition>
-      <InProgress>Contact Page</InProgress>
+      <Navbar />
+      <main>
+        <ContactSection />
+      </main>
     </Transition>
   );
 }

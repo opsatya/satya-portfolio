@@ -1,16 +1,21 @@
 /** @type {import('framer-motion').Variants} */
 export const scaleUp = {
-  initial: { scale: 0, x: '-50%', y: '-50%' },
+  // Hidden by default
+  initial: { opacity: 0, scale: 0.9, x: '-50%', y: '-50%', display: 'none' },
   enter: {
+    opacity: 1,
     scale: 1,
     x: '-50%',
     y: '-50%',
-    transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+    display: 'block',
+    transition: { duration: 0.18, ease: [0.2, 0.8, 0.2, 1] },
   },
   closed: {
-    scale: 0,
+    opacity: 0,
+    scale: 0.9,
     x: '-50%',
     y: '-50%',
-    transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] },
+    transition: { duration: 0.12, ease: [0.4, 0, 0.2, 1] },
+    transitionEnd: { display: 'none' },
   },
 };

@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 import { MagneticButton } from '@/components';
 import { useOffcanvasToggle } from '@/hooks';
@@ -22,6 +23,8 @@ export function OffcanvasToggle({ isOpen, handleOpen }) {
     element: containerRef,
     callback: latest => latest <= 1 && handleOpen(false),
   });
+  const pathname = usePathname();
+  const forceStatic = pathname === '/contact' || pathname === '/about';
 
   return (
     <motion.div
@@ -32,7 +35,7 @@ export function OffcanvasToggle({ isOpen, handleOpen }) {
         duration: 1,
         ease: [0.76, 0, 0.24, 1],
       }}
-      style={{ scale: scrollYProgress }}
+      style={{ scale: forceStatic ? 1 : scrollYProgress }}
     >
       <MagneticButton
         size='md'

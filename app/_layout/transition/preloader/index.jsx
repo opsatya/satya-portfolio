@@ -21,7 +21,8 @@ export function Preloader() {
     callback: () => {
       setIndex(prevIndex => prevIndex + 1);
     },
-    duration: index === 0 ? 500 : 250,
+    // Slow the first word slightly and keep a short cadence after
+    duration: index === 0 ? 600 : 200,
     deps: [index],
   });
 

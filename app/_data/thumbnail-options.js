@@ -1,22 +1,6 @@
 export const thumbnailOptions = [
-  {
-    href: '/fabric',
-    title: 'FABRIC™',
-    image: 'Dennis-Portfolio/images/hlz36eeb3ddfvqt9tex9',
-  },
-  {
-    href: '/aanstekelijk',
-    title: 'Aanstekelijk',
-    image: 'Dennis-Portfolio/images/aigt2q3xiqb8ovujzscc',
-  },
-  {
-    href: '/base-create',
-    title: 'Base Create',
-    image: 'Dennis-Portfolio/images/ahuzarh793qmv9sdveyk',
-  },
-  {
-    href: '/avvr',
-    title: 'AVVR',
-    image: 'Dennis-Portfolio/images/pzychyr1ans60gqlevhg',
-  },
+  { href: 'https://doctorcare-nexus.vercel.app/', title: 'Healthcare App', image: '/images/screen1.png' },
+  { href: 'https://algorthim-trading.vercel.app/', title: 'Algorithmic Trading', image: '/images/screen2.png' },
+  { href: 'https://nirali-prakashan.vercel.app/', title: 'Book Store', image: '/images/screen3.png' },
+  { href: 'https://github.com/opsatya', title: 'More on GitHub', image: '/images/screen4.png' },
 ];

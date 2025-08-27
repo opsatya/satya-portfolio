@@ -1,5 +1,4 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import { Navbar, Transition, Description } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -11,7 +10,10 @@ export const metadata = {
 export default function About() {
   return (
     <Transition>
-      <InProgress>About Page</InProgress>
+      <Navbar />
+      <main style={{ minHeight: '900px' }}>
+        <Description />
+      </main>
     </Transition>
   );
 }

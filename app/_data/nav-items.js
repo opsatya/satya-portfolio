@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     href: '/work',
-    title: 'work',
+    title: 'projects',
   },
   {
     href: '/about',

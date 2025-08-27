@@ -5,7 +5,6 @@ const withLess = require('next-with-less');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  distDir: 'dist',
   // Less config kept lightweight; additional variables can be added later
   lessLoaderOptions: {
     lessOptions: {

@@ -1,6 +1,7 @@
 import {
   Contact,
   Description,
+  Experience,
   Header,
   Navbar,
   Project,
@@ -9,11 +10,10 @@ import {
 } from '@/layout';
 
 /** @type {import('next').Metadata} */
-// Updated page metadata to reflect Satyajeet Singh and full‑stack focus
 export const metadata = {
   title: 'Home | Satyajeet Singh',
   description:
-    'Full Stack developer (MERN). Building scalable web apps, REST APIs, and secure auth. Cloud, Docker, and performance-focused UI.',
+    'Full Stack Developer building production SaaS with React, TypeScript, Node.js, Fastify, PostgreSQL, Redis and AWS.',
 };
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
       <Header />
       <main>
         <Description />
+        <Experience />
         <Thumbnail />
         <Project />
       </main>

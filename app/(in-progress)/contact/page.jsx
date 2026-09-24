@@ -4,7 +4,7 @@ import { Navbar, Transition, Contact as ContactSection } from '@/layout';
 export const metadata = {
   title: 'Contact',
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+    'Full Stack Developer building production SaaS with React, TypeScript, Node.js, Fastify, PostgreSQL, Redis and AWS. Based in Pune, India.',
 };
 
 export default function Contact() {

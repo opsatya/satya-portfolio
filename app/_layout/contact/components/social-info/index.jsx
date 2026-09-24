@@ -16,7 +16,7 @@ export function SocialInfo() {
         key={id}
         className='border-b border-solid border-b-transparent transition-all duration-300 ease-in-expo hover:border-b-border'
       >
-        <Link href={href} target='_blank' rel='noopener' passHref>
+        <Link href={href} target='_blank' rel='noopener noreferrer' passHref>
           <MagneticButton>{title}</MagneticButton>
         </Link>
       </li>
@@ -38,7 +38,7 @@ export function SocialInfo() {
         <div className='flex gap-8'>
           <div>
             <ListTitle>Version</ListTitle>
-            <p className='mt-7'>2025 © Edition</p>
+            <p className='mt-7'>2026 © Edition</p>
           </div>
           <div>
             <ListTitle>Local time</ListTitle>

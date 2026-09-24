@@ -1,10 +1,10 @@
-import { Navbar, Transition, Description } from '@/layout';
+import { Description, Experience, Navbar, Transition } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
   title: 'About',
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+    'Full Stack Developer building production SaaS with React, TypeScript, Node.js, Fastify, PostgreSQL, Redis and AWS. Based in Pune, India.',
 };
 
 export default function About() {
@@ -13,6 +13,7 @@ export default function About() {
       <Navbar />
       <main style={{ minHeight: '900px' }}>
         <Description />
+        <Experience />
       </main>
     </Transition>
   );

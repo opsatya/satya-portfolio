@@ -1,5 +1,6 @@
 export * from './contact';
 export * from './description';
+export * from './experience';
 export * from './header';
 export * from './navbar';
 export * from './offcanvas';

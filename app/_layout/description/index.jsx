@@ -8,9 +8,8 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 
 import { Title, Wrapper } from './index.styled';
 
-// Updated short summary to reflect Satyajeet's profile and job-seeking focus
 const phrase =
-  'Full Stack Developer (MERN). I build scalable web apps, REST APIs, and secure auth with a focus on performance and clean, maintainable code.';
+  'Full Stack Developer building production SaaS with React, TypeScript, Node.js and PostgreSQL. I care most about the backend - API design, data models, and systems that scale.';
 
 export function Description() {
   return (
@@ -25,7 +24,7 @@ export function Description() {
         <div className='basis-7/12 lg:basis-3/12'>
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              Comfortable with cloud deployments, Docker, and Git workflows. Quick to learn, focused on solving real problems, and ready to contribute.
+              Currently at Techechelons, shipping modules for Lektus - a multi-portal HR &amp; recruitment platform on Fastify, Prisma, Redis and AWS.
             </Balancer>
           </ParallaxFade>
         </div>

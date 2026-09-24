@@ -15,7 +15,7 @@ export function ThumbnailList({
   handlePointerLeave,
   moveItems,
 }) {
-  const items = thumbnailOptions.map(({ href, title }, index) => {
+  const items = thumbnailOptions.map(({ href, title, tags }, index) => {
     const id = index;
     return (
       <li
@@ -37,6 +37,8 @@ export function ThumbnailList({
         <Link
           href={href}
           className='flex items-center justify-between max-lg:flex-wrap'
+          target='_blank'
+          rel='noopener noreferrer'
           passHref
         >
           <h4
@@ -46,7 +48,7 @@ export function ThumbnailList({
           >
             {title}
           </h4>
-          <p className='text-lg font-medium'>Design & Development</p>
+          <p className='text-lg font-medium'>{tags}</p>
         </Link>
       </li>
     );

@@ -25,7 +25,7 @@ export function Header() {
             <ParallaxSlider repeat={4} baseVelocity={2}>
               <span className='pe-12'>
                 Satyajeet Singh
-                <span className='spacer'>—</span>
+                <span className='spacer ms-[0.3em]'>-</span>
               </span>
             </ParallaxSlider>
           </h1>
@@ -38,14 +38,13 @@ export function Header() {
             </div>
 
             <h4 className='text-[clamp(1.55em,2.5vw,2.75em)]'>
-              {/* Updated role tagline; concise and job‑focused */}
               <span className='block'>Full Stack Developer</span>
-              <span className='block'>&nbsp;MERN • APIs • Cloud</span>
+              <span className='block'>PERN • APIs • Cloud</span>
             </h4>
             {/* Quick access links for recruiters (GitHub, LinkedIn, Email) */}
             <div className='mt-4 flex flex-wrap gap-3'>
-              <Link href='https://github.com/opsatya' target='_blank'>github.com/opsatya</Link>
-              <Link href='https://www.linkedin.com/in/satyjeet-singh' target='_blank'>LinkedIn</Link>
+              <Link href='https://github.com/opsatya' target='_blank' rel='noopener noreferrer'>github.com/opsatya</Link>
+              <Link href='https://www.linkedin.com/in/satyjeet-singh' target='_blank' rel='noopener noreferrer'>LinkedIn</Link>
               <Link href='mailto:satyajeet.singh12005@gmail.com'>Email</Link>
             </div>
           </div>

@@ -56,13 +56,13 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex w-full flex-col gap-4 lg:flex-row'>
           <div>
-            <a href='mailto:satyajeetsingh89001@gmail.com'>
+            <a href='mailto:satyajeet.singh12005@gmail.com'>
               <MagneticButton
                 variant='outline'
                 size='md'
                 className='w-full min-w-[320px] whitespace-nowrap border-muted-foreground justify-start text-left'
               >
-                satyajeetsingh89001@gmail.com
+                satyajeet.singh12005@gmail.com
               </MagneticButton>
             </a>
           </div>

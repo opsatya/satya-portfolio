@@ -11,7 +11,7 @@ export function OffcanvasFooter() {
     const id = randomId();
     return (
       <li key={id}>
-        <Link href={href} target='_blank' rel='noopener' passHref>
+        <Link href={href} target='_blank' rel='noopener noreferrer' passHref>
           <MagneticButton>{title}</MagneticButton>
         </Link>
       </li>

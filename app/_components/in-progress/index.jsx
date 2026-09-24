@@ -9,7 +9,7 @@ export function InProgress({ children }) {
           <ParallaxSlider repeat={8} baseVelocity={2}>
             <span className='pe-12'>
               {children}
-              <span className='spacer'>—</span>
+              <span className='spacer ms-[0.3em]'>-</span>
             </span>
           </ParallaxSlider>
         </h1>

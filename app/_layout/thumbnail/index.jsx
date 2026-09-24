@@ -79,11 +79,9 @@ export function Thumbnail() {
           variants={scaleUp}
           active={active}
         />
-        <ThumbnailCursorLabel ref={label} variants={scaleUp} active={active}>
-          View
-        </ThumbnailCursorLabel>
+        <ThumbnailCursorLabel ref={label} variants={scaleUp} active={active} />
         <ThumbnailAction>
-          More work<sup className='text-muted-foreground'>14</sup>
+          More on GitHub
         </ThumbnailAction>
       </div>
     </section>

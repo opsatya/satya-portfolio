@@ -1,6 +1,21 @@
+// Projects listed on the resume. Replace the image files in /public/images to update previews.
 export const thumbnailOptions = [
-  { href: 'https://doctorcare-nexus.vercel.app/', title: 'Healthcare App', image: '/images/screen1.png' },
-  { href: 'https://algorthim-trading.vercel.app/', title: 'Algorithmic Trading', image: '/images/screen2.png' },
-  { href: 'https://nirali-prakashan.vercel.app/', title: 'Book Store', image: '/images/screen3.png' },
-  { href: 'https://github.com/opsatya', title: 'More on GitHub', image: '/images/screen4.png' },
+  {
+    href: 'https://github.com/opsatya/localKart',
+    title: 'LocalKart',
+    tags: 'Express • MongoDB • Expo',
+    image: '/images/localkart.png',
+  },
+  {
+    href: 'https://github.com/opsatya/cinemaSync',
+    title: 'CinemaSync',
+    tags: 'React • Flask • Socket.IO',
+    image: '/images/screen5.png',
+  },
+  {
+    href: 'https://algorthim-trading.vercel.app/',
+    title: 'Algorithmic Trading',
+    tags: 'React • Flask • Market APIs',
+    image: '/images/screen2.png',
+  },
 ];

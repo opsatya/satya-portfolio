@@ -19,6 +19,7 @@ export function ProjectSlider({ type, source }) {
           src={source}
           className='object-cover'
           fill={true}
+          sizes='(max-width: 600px) 150px, 30vw'
           alt='project image'
           onError={() => setImageError(true)}
         />
@@ -35,7 +36,8 @@ export function ProjectSlider({ type, source }) {
       className='relative w-1/4 rounded'
       style={{
         minWidth: '150px',
-        height: '20vw',
+        // Match the screenshots' ~2.15:1 shape so object-cover barely crops
+        aspectRatio: '1900 / 882',
       }}
     >
       {image}

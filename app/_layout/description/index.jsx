@@ -24,7 +24,7 @@ export function Description() {
         <div className='basis-7/12 lg:basis-3/12'>
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              Currently at Techechelons, shipping modules for Lektus - a multi-portal HR &amp; recruitment platform on Fastify, Prisma, Redis and AWS.
+              Currently at Techechelons, shipping modules for Lektus - a multi-portal Intranet, CRM &amp; recruitment platform on Fastify, Prisma, Redis and AWS.
             </Balancer>
           </ParallaxFade>
         </div>
